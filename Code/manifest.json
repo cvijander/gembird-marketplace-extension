@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Gembird stanje (marketplace)",
+  "version": "1.4",
+  "description": "Prikazuje naziv, stanje i cenu sa gembird.rs pored EAN-a u panelima prodavaca.",
+  "host_permissions": ["https://www.gembird.rs/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.ananas.rs/*",
+        "https://bazzar.rs/*",
+        "https://*.bazzar.rs/*",
+        "https://portal.planeta.services/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://backoffice.shoppster.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "match_origin_as_fallback": true
+    }
+  ]
+}
