@@ -3,6 +3,12 @@
   "name": "Gembird stanje (marketplace)",
   "version": "1.4",
   "description": "Prikazuje naziv, stanje i cenu sa gembird.rs pored EAN-a u panelima prodavaca.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "host_permissions": ["https://www.gembird.rs/*"],
   "background": { "service_worker": "background.js" },
   "content_scripts": [
