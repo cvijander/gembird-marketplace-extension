@@ -17,7 +17,7 @@ Nastala je kao proširenje prvobitne ekstenzije za KupujemProdajem sa ciljem da 
 ## Pregled u praksi (Slike)
 
 ### Ananas (mportal)
-![Prikaz stanja na Ananas mportalu](images/Ananas-spark.jpg)
+![Prikaz stanja na Ananas mportalu](images/Ananas spark.jpg)
 
 ### Ananas
 ![Prikaz stanja na Ananasu](images/Ananas.jpg)
