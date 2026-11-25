@@ -14,13 +14,30 @@ Nastala je kao proširenje prvobitne ekstenzije za KupujemProdajem sa ciljem da 
   * mestom pakovanja (na podržanom prikazu)
 * **Prilagođavanje štampe (`@media print`)** da boks bude čitljiv i na crno-belom štampaču.
 
+## Pregled u praksi (Slike)
+
+### Ananas (mportal)
+![Prikaz stanja na Ananas mportalu](images/Ananas-mport.jpg)
+
+### Ananas
+![Prikaz stanja na Ananasu](images/Ananas.jpg)
+
+### Bazzar
+![Prikaz stanja na Bazzaru](images/Bazar.jpg)
+
+### Planeta Sport
+![Prikaz stanja na Planeta Sport panelu](images/Planeta-sport.jpg)
+
+### Shoppster (Picking Slip)
+![Prikaz stanja na Shoppster Picking Slip-u](images/Shopster.jpg)
+
 ## Struktura projekta
 
 * `manifest.json` — konfiguracija Manifest V3, dozvole i `content_scripts` pravila
 * `background.js` — Service Worker koji izvršava `fetch` ka `gembird.rs` i vraća rezultat content skripti
 * `content.js` — skeniranje DOM-a, praćenje dinamičkih promena (`MutationObserver`), parsiranje odgovora i iscrtavanje oznaka
-* `icons/` — ikonice ekstenzije (`icon.svg`, `icon16.png`, `icon32.png`, `icon48.png`, `icon128.png`)
-* `screenshots/` — slike rada ekstenzije na različitim portalima
+* `icons/` — ikonice ekstenzije u potrebnim dimenzijama
+* `images/` — slike rada ekstenzije na različitim portalima
 
 ## Lokalna instalacija (Developer Mode)
 
